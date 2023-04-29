@@ -1,0 +1,63 @@
+.card {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
+    .card-title {
+        color: darkcyan;
+        margin-left: 12px;
+
+    }
+
+    .card-body {
+        padding: 0px;
+
+        .city-name {
+            color: orangered;
+            font-weight: 600;
+        }
+
+        .place {
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 2px;
+
+
+        }
+
+        .badge {
+
+            border: 0.5px solid;
+            margin-bottom: 5px;
+            display: block;
+
+        }
+
+        .badge-success {
+            color: green;
+            background-color: yellowgreen;
+        }
+        .badge-failure{
+            color: #980d0d;
+            background-color: #c59083;
+        }
+    }
+
+
+
+}

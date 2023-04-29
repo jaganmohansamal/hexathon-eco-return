@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#4d6b0b;
+    --secondary-color:#ffff;
+
+}
+body{
+    height: 100vh;
+    background-color:#15171C !important;
+    color:var(--secondary-color) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 12px;
+    }
+   
+}

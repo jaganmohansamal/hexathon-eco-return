@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">
+        <img src="../../../../assets/images/ecoReturn.jpeg" class="card-img-top" alt="...">
+        <h6 class="card-title">RV-Machine</h6>
+    </div>
+
+    <div class="card-body">
+        <p class="place">{{citySelected.place}}</p>
+        <p class="badge" [ngClass]="citySelected.status === 'assigned' ? 'badge-success' : 'badge-failure'" (click)="Payment($event)">{{citySelected.status}}</p>
+        <a href="https://maps.google.com/?q={{citySelected.latitude}},{{citySelected.longitude}}">Location</a>
+    </div>
+</div>

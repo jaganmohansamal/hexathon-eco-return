@@ -1,0 +1,13 @@
+<div class="dropdown">
+  <button (click)="searchBtn()" class="dropbtn">Select City</button>
+  <div id="myDropdown" class="dropdown-content" [class.show]="toggle" (click)="dropdownSelected($event)">
+    <a value="hyderabad" id="hyderabad">Hyderabad</a>
+    <a value="banglore" id="banglore">Banglore</a>
+    <a value="delhi" id="delhi">Delhi</a>
+    <a value="mumbai" id="mumbai">Mumbai</a>
+  </div>
+</div>
+<div class="rv-tiles">
+<app-machines *ngFor="let place of selectedPlace"[citySelected]="place"></app-machines>
+</div>
+
